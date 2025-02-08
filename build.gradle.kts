@@ -23,6 +23,7 @@ dependencies {
     implementation("org.eclipse.jetty.websocket:websocket-server:9.4.43.v20210629")  // WebSocket Server
     implementation("org.eclipse.jetty:jetty-server:9.4.43.v20210629")  // Jetty Server
     implementation("org.eclipse.jetty:jetty-servlet:9.4.43.v20210629")  // Jetty Servlet support
+    implementation("com.fasterxml.jackson.core:jackson-databind:2.17.0")
 
     tasks.jar {
         manifest {

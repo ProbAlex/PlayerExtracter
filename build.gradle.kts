@@ -33,6 +33,9 @@ dependencies {
 
     tasks.shadowJar {
         archiveClassifier.set("") // Ensures the shadow JAR replaces the normal JAR
+        manifest {
+            attributes["Main-Class"] = "org.example.Main"
+        }
     }
 
     tasks.test {
